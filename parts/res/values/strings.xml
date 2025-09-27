@@ -25,6 +25,14 @@
     <string name="tile_on">On</string>
     <string name="tile_off">Off</string>
 
+    <!-- Per-app refresh rate -->
+    <string name="refresh_title">Per-app refresh rate</string>
+    <string name="refresh_title_tile_label">Refresh rate</string>
+    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_standard">60Hz</string>
+    <string name="refresh_extreme">120Hz</string>
+
     <!-- GameBar Overlay -->
     <string name="game_bar_title">GameBar</string>
     <string name="game_bar_summary">Enable the system overlay (FPS, Temp, etc.)</string>
@@ -86,5 +94,4 @@
         <string name="charge_bypass_notification_text">Battery charging is currently bypassed</string>
         <string name="charge_bypass_smart_enabled">Smart charging bypass enabled at %d%%</string>
         <string name="charge_bypass_smart_disabled">Smart charging bypass disabled</string>
-
 </resources>
