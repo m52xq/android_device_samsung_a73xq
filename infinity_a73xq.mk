@@ -18,14 +18,19 @@
 $(call inherit-product, device/samsung/a73xq/device.mk)
 
 # Inherit from the 64 bit configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Inherit from the common Open Source product configuration
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# InfinityX
+INFINITY_MAINTAINER := "tilt-rgb"
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -46,5 +51,5 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Vendor fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint="google/husky_beta/husky:16/BP41.250822.010/14082742:user/release-keys"
+    BuildFingerprint="samsung/a73xqxx/a73xq:11/RP1A.200720.012/A736BXXUAEXK4:user/release-keys"
     BuildDesc="a73xqxx-user 11 RP1A.200720.012 A736BXXUAEXK4 release-keys"
